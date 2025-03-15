@@ -1,0 +1,27 @@
+{
+    "name": "250102_devcontainer_numpy2",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "ctn_numpy2",
+    "workspaceFolder": "/workspace",
+    "overrideCommand": false, 
+    "shutdownAction": "none",
+    "extensions": [
+        "christian-kohler.path-intellisense",
+        "daniellin.auto-header",
+        "github.vscode-pull-request-github",
+        "grapecity.gc-excelviewer",
+        "mechatroner.rainbow-csv",
+        "ms-ceintl.vscode-language-pack-ja",
+        "ms-python.debugpy",
+        "ms-python.isort",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "njpwerner.autodocstring",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}

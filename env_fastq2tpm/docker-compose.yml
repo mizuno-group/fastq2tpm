@@ -1,0 +1,23 @@
+version: '3.6'
+services:
+  ctn_numpy2:
+    build:      
+      context: ./ctn_numpy2
+      dockerfile: Dockerfile
+      args:
+        - PYTHON_VER=${PYTHON_VER}
+    shm_size: '2gb'
+    volumes:
+      - type: bind
+        source: ${BIND_SRC}
+        target: /workspace
+    tty: true
+    stdin_open: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            capabilities: [gpu]
+        limits:
+          cpus: '0.9'

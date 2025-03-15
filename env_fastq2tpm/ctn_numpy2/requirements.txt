@@ -1,0 +1,7 @@
+# 基本ライブラリ
+numpy==2.1.3   # 数値計算
+pandas         # データ操作
+scipy          # 科学計算
+dask           # 分散処理対応のデータ操作
+polars         # 高速なデータフレーム操作
+fastparquet    # Parquet形式の高速入出力

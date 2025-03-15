@@ -10,13 +10,13 @@ This repository is under construction and will be officially released by [Mizuno
 Please contact tadahaya[at]gmail.com before publishing your paper using the contents of this repository.  
 
 ## Authors
-- [自身の名前](自身のgithub repository)  
+- [Takumi Iwasaka](https://github.com/T-IWASAKA)  
     - main contributor  
 - [Tadahaya Mizuno](https://github.com/tadahayamiz)  
     - correspondence  
   
 ## Contact
 If you have any questions or comments, please feel free to create an issue on github here, or email us:  
-- [自身のアドレス]  
+- takubasketrunner[at]gmail.com  
 - tadahaya[at]gmail.com  
     - lead contact  
