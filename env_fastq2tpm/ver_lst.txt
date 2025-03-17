@@ -1,3 +1,6 @@
+(myenv) root@77f6c6625391:/workspace# conda --version
+conda 25.1.1
+
 (myenv) root@5fd23e4e646e:/workspace# conda list
 # packages in environment at /opt/conda/envs/myenv:
 #
