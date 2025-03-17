@@ -19,10 +19,20 @@ ARG USER_GID=$USER_UID
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m -s /bin/bash $USERNAME 
 
+# 必要なロケールをインストール
+RUN apt-get update && \
+    apt-get install -y locales && \
+    echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen && \
+    locale-gen && \
+    update-locale LANG=ja_JP.UTF-8 LC_ALL=ja_JP.UTF-8
+
 WORKDIR /workspace
 ENV TZ=Asia/Tokyo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+
 ENV LANG=ja_JP.UTF-8
+ENV LANGUAGE=ja_JP:ja
 ENV LC_ALL=ja_JP.UTF-8
 
 ## pythonのver指定
