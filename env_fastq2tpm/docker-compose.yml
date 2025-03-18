@@ -1,8 +1,8 @@
 version: '3.6'
 services:
-  ctn_numpy2:
+  ctn:
     build:      
-      context: ./ctn_numpy2
+      context: ./ctn
       dockerfile: Dockerfile
       args:
         - PYTHON_VER=${PYTHON_VER}
