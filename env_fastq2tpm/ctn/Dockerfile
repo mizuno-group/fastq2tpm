@@ -44,6 +44,6 @@ RUN conda create -n myenv python=${PYTHON_VER} -y && \
     conda clean -a
 
 ## fastpとkallistoをbiocondaチャネルからインストール
-## 250315 kallistoのver指定でエラーが出るため一旦指定なし、今後検討する
+## 250325 conda-forgeを優先してやることでkalistoのver指定を有効にする
 RUN conda install -n myenv -c bioconda -y fastp && \
-    conda install -n myenv -c bioconda kallisto -y 
+    conda install -n myenv -c conda-forge -c bioconda -y kallisto=0.50.1 -y

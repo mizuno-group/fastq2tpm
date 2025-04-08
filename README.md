@@ -2,8 +2,8 @@
 In-house pipeline for converting FASTQ files of RNA-seq results to TPM files.  
 
 # Requirements
-- fastp version XX  
-- kallisto version XX  
+- fastp version 0.23.2  
+- kallisto version 0.50.1  
 
 # Note
 This repository is under construction and will be officially released by [Mizuno group](https://github.com/mizuno-group).  
